@@ -1,22 +1,18 @@
 //import {mount} from 'react-mounter';
 
-function renderLayout(component) {
-	ReactLayout.render(Main, {
+function renderComponent(component) {
+	ReactLayout.render(MainLayout, {
+		header: <Nav />,
 		dashboard: <Dashboard />,
-		main: <Main />
+		main: component
 	});
 }
 
-function renderComponent(component) {
-	// ReactLayout.render()
-}
-
 FlowRouter.route('/', {
-	name: "Home",
+	name: "Root",
 	action (params) {
-		ReactLayout.render(MainLayout, {
-			header: <Nav />,
-			main: <Main/>
-		});
+		renderComponent(<Content />)
 	}
 });
+
+//FlowRouter.route('/')

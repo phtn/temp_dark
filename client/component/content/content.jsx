@@ -1,17 +1,30 @@
 Content = React.createClass({
 	render() {
 		return (
-			<div className="col-xs-9">
-				<div className="media">
-				  <div className="media-left">
-				    <a href="#">
-				      <img className="media-object" src="..." alt="..."/>
-				    </a>
-				  </div>
-				  <div className="media-body">
-				    <h4 className="media-heading">Media heading</h4>
-				    ...
-				  </div>
+			<div className="container-fluid text-center"> 
+				<div className="col-xs-10">
+					<div className="col-xs-4">
+						<div className="panel panel-default panel-pad">
+						  <div className="panel-body">
+						    <span className="panel-number">1</span>
+						  </div>
+						</div>
+					</div>
+					<div className="col-xs-4">
+						<div className="panel panel-default panel-pad">
+						  <div className="panel-body">
+						    <span className="panel-number">2</span>
+						  </div>
+						</div>
+					</div>
+					<div className="col-xs-4">
+						<div className="panel panel-default panel-pad">
+						  <div className="panel-body">
+						    <span className="panel-number">3</span>
+						  </div>
+						</div>
+					</div> 
+					
 				</div>
 			</div>
 		)

@@ -1,9 +1,12 @@
 MainLayout = React.createClass({
 	render() {
 		return (
-			<div className="">
+			<div>
 				{this.props.header}
-				{this.props.main}
+				<div className="container-fluid"> 
+					{this.props.dashboard}
+					{this.props.main}
+				</div>
 			</div>
 		)
 	}

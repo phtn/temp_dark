@@ -9,8 +9,12 @@ Nav = React.createClass({
 			        	<span className="fa fa-code brand-icon" ></span>
 			        	Dark React Template
 			        </h3>
+			        
 			      </a>
 			    </div>
+			    <div className="nav navbar-nav navbar-right">
+			    	<h3 className="sign-in"> Sign In </h3> 
+			    </div> 
 			  </div>
 			</nav>
 		)
