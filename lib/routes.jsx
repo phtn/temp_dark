@@ -1,9 +1,8 @@
-//import {mount} from 'react-mounter';
 
 function renderComponent(component) {
 	ReactLayout.render(MainLayout, {
 		header: <Nav />,
-		dashboard: <Dashboard />,
+		sidebar: <Sidebar />,
 		main: component
 	});
 }
@@ -11,8 +10,27 @@ function renderComponent(component) {
 FlowRouter.route('/', {
 	name: "Root",
 	action (params) {
-		renderComponent(<Content />)
+		renderComponent(<Home />)
 	}
 });
 
-//FlowRouter.route('/')
+FlowRouter.route('/notes', {
+	name: 'Notes',
+	action (params) {
+		renderComponent(<Notes />)
+	}
+});
+
+FlowRouter.route('/documents', {
+	name: 'Documents',
+	action (params) {
+		renderComponent(<Documents />)
+	}
+});
+
+FlowRouter.route('/about', {
+	name: 'About',
+	action (params) {
+		renderComponent(<About />)
+	}
+});

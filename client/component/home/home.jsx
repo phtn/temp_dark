@@ -1,7 +1,11 @@
-Content = React.createClass({
+Home = React.createClass({
 	render() {
 		return (
-			<div className="container-fluid text-center"> 
+			<div className="container-fluid text-center">
+				<div className="title-div">
+					<p className="title-lbl">home</p>
+
+				</div> 
 				<div className="col-xs-10">
 					<div className="col-xs-4">
 						<div className="panel panel-default panel-pad">

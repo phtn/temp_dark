@@ -23,8 +23,11 @@ react
 kadira:flow-router
 kadira:react-layout
 
+
 twbs:bootstrap
 mquandalle:jade
 stylus
 
 fortawesome:fontawesome
+
+
