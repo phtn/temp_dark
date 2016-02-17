@@ -3,7 +3,7 @@ Documents = React.createClass({
 		return (
 			<div className="container-fluid text-center" >
 				<div className="title-div">
-					<p className="title-lbl">documents</p>
+					<p className="title-lbl animated fadeInUp">documents</p>
 				</div>
 			</div>
 		)

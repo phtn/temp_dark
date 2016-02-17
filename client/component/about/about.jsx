@@ -3,7 +3,7 @@ About = React.createClass({
 		return (
 			<div className="container-fluid text-center" >
 				<div className="title-div">
-					<p className="title-lbl">about</p>
+					<p className="title-lbl animated fadeInUp">about</p>
 				</div>
 			</div>
 		)

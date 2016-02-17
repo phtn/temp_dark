@@ -3,7 +3,7 @@ Home = React.createClass({
 		return (
 			<div className="container-fluid text-center">
 				<div className="title-div">
-					<p className="title-lbl">home</p>
+					<p className="title-lbl animated fadeInUp">home</p>
 
 				</div> 
 				<div className="col-xs-10">

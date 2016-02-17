@@ -5,7 +5,7 @@ Nav = React.createClass({
 			  <div className="container-fluid">
 			    <div className="navbar-header">
 			      <a className="navbar-brand" href="/">
-			        <h3 className="brand">
+			        <h3 className="brand animated fadeIn">
 			        	<span className="fa fa-code brand-icon" ></span>
 			        	Dark React Template
 			        </h3>
