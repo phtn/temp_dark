@@ -32,11 +32,11 @@ Todo = React.createClass({
 						<p className="title-lbl animated slideInLeft">todo</p>
 					</div>
 					<div className="col-xs-6">
-						<div className="input-group input-group-sm add-todo-input">
+						<div className="input-group input-group-sm add-todo-input animated slideInLeft">
 						  <span className="input-group-addon" id="sizing-addon3">Add Todos</span>
 						  <input type="text" id="todo-input" ref="todoInput" className="form-control" placeholder="" aria-describedby="sizing-addon3" onKeyUp={this._handleInsert}/>
 						</div>
-						<div className="">
+						<div className="todo-list animated slideInUp">
 							{this._getTodos()}
 						</div>
 					</div>
