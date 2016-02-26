@@ -21,10 +21,10 @@ FlowRouter.route('/notes', {
 	}
 });
 
-FlowRouter.route('/documents', {
-	name: 'Documents',
+FlowRouter.route('/todo', {
+	name: 'Todo',
 	action (params) {
-		renderComponent(<Documents />)
+		renderComponent(<Todo />)
 	}
 });
 

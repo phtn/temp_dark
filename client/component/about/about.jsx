@@ -1,9 +1,9 @@
 About = React.createClass({
 	render() {
 		return (
-			<div className="container-fluid text-center" >
+			<div className="container-fluid" >
 				<div className="title-div">
-					<p className="title-lbl animated fadeInUp">about</p>
+					<p className="title-lbl animated slideInLeft">about</p>
 				</div>
 			</div>
 		)

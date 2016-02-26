@@ -1,15 +1,18 @@
 Sidebar = React.createClass({
+	
 	getInitialState() {
 	    return {
 	        selected:'home'  
 	    };
 	},
-	isActive: function(val) {
+	isActive(val) {
 		return ( val === this.state.selected) ? 'active':'default';
 	},
-	setFilter: function(filter) {
-	    this.setState({selected  : filter})
-	    //this.props.onChangeFilter(filter);
+	setFilter(filter) {
+	    this.setState({selected : filter})
+  	},
+  	componentDidMount() {
+  	    this.setState({selected : 'home'});
   	},
 	render() {
 		return (
@@ -18,7 +21,7 @@ Sidebar = React.createClass({
 				<ul className="nav nav-pills nav-stacked sidebar-ul">
 				  <li role="presentation" className={this.isActive('home')} onClick={this.setFilter.bind(this, 'home')}><a href="/">Home</a></li>
 				  <li role="presentation" className={this.isActive('notes')} onClick={this.setFilter.bind(this, 'notes')}><a href="/notes">Notes</a></li>
-				  <li role="presentation" className={this.isActive('documents')} onClick={this.setFilter.bind(this, 'documents')}><a href="/documents">Documents</a></li>
+				  <li role="presentation" className={this.isActive('todo')} onClick={this.setFilter.bind(this, 'todo')}><a href="/todo">Todo</a></li>
 				  <li role="presentation" className={this.isActive('about')} onClick={this.setFilter.bind(this, 'about')}><a href="/about">About</a></li>
 				</ul>
 			</div>
