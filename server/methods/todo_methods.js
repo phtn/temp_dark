@@ -13,5 +13,8 @@ Meteor.methods({
 			MyTodos.update({_id:id}, {$set: {color: 'grey'}});
 		}
 		
+	},
+	removeTodo(id) {
+		MyTodos.remove({_id: id})
 	}
 })
