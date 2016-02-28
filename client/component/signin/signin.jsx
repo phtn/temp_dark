@@ -8,8 +8,8 @@ SignIn = React.createClass({
 						<p className="title-lbl animated slideInLeft">sign in with</p>
 					</div>
 					<div className="col-xs-6">
-						<button type="button" className="btn btn-danger animated fadeInUp sign-btn" id="google"><span className="sign-icon fa fa-google"></span>Google</button> <br/>
-						<button type="button" className="btn btn-primary animated fadeInUp sign-btn" id="facebook"><span className="sign-icon fa fa-facebook"></span>facebook</button>
+						<button type="button" className="btn btn-danger animated fadeIn sign-btn" id="google"><span className="sign-icon fa fa-google"></span>Google</button> <br/>
+						<button type="button" className="btn btn-primary animated fadeIn sign-btn" id="facebook"><span className="sign-icon fa fa-facebook"></span>facebook</button>
 					</div>
 					
 				</div>
