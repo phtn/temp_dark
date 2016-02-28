@@ -1,9 +1,20 @@
 About = React.createClass({
 	render() {
 		return (
-			<div className="container-fluid" >
-				<div className="title-div">
-					<p className="title-lbl animated slideInLeft">about</p>
+			<div className="container-fluid">
+				
+				<div className="col-xs-10">
+					<div className="title-div">
+						<p className="title-lbl animated slideInLeft">about</p>
+					</div>
+					<div className="col-xs-6">
+						<div className="jumbotron animated flipInX">
+							<h3>Dark React Template</h3>
+							<h6>Created by: <a href='https://twitter.com/LecenaJun'>phtn458</a></h6>
+							<p><a className="btn btn-default btn-sm" href="https://github.com/phtn/temp_dark" role="button">view in Github <span className="fa fa-github"></span></a></p>
+						</div>
+					</div>
+					
 				</div>
 			</div>
 		)
