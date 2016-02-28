@@ -13,7 +13,7 @@ Nav = React.createClass({
 			      </a>
 			    </div>
 			    <div className="nav navbar-nav navbar-right">
-			    	<h3 className="sign-in"> Sign In </h3> 
+			    	<h3 className="sign-in"><a href='/sign'> Sign In </a></h3> 
 			    </div> 
 			  </div>
 			</nav>

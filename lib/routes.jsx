@@ -34,3 +34,10 @@ FlowRouter.route('/about', {
 		renderComponent(<About />)
 	}
 });
+
+FlowRouter.route('/sign', {
+	name: 'Sign In',
+	action (params) {
+		renderComponent(<SignIn />)
+	}
+});
