@@ -2,7 +2,7 @@
 
 Dark React Template is a sample template made with [Meteor](http://www.meteor.com) v1.2.1 , [React](https://facebook.github.io/react/) & [Flow Router](https://github.com/kadirahq/flow-router) by [Kadira](https://kadira.io/).
 
-Meteor Packages:
+#### Meteor Packages:
     
   - react
   - kadira:flow-router
@@ -13,9 +13,13 @@ Meteor Packages:
   - fortawesome:fontawesome
   - msavin:mongol
 
-### Installation
+#### Animation
 
-``` sh
+[Animate.css](https://daneden.github.io/animate.css/) by [Daniel Eden](https://daneden.me/) view Github [repo](https://github.com/daneden/animate.css)
+
+#### Installation
+
+```sh
     git clone git@github.com:phtn/temp_dark.git
     cd temp_dark
     meteor
