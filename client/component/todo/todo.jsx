@@ -16,7 +16,7 @@ Todo = React.createClass({
 		
 		var text = ReactDOM.findDOMNode(this.refs.todoInput).value.trim();
 		if (event.keyCode === 13) {
-			if ($('#todo-input').val().trim() !== '') {
+			if (text !== '') {
 				console.log('added: ' + text)
 				// Call insert method
 				Meteor.call('insertTodo', text)
