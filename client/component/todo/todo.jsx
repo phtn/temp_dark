@@ -13,23 +13,29 @@ Todo = React.createClass({
 		})
 	},
 	_handleInsert(event) {
-		event.preventDefault;
+		
 		var text = ReactDOM.findDOMNode(this.refs.todoInput).value.trim();
 		if (event.keyCode === 13) {
-			console.log('added: ' + text)
-			// Call insert method
-			Meteor.call('insertTodo', text)
-			// clear input field
+			if ($('#todo-input').val().trim() !== '') {
+				console.log('added: ' + text)
+				// Call insert method
+				Meteor.call('insertTodo', text)
+				// clear input field
+			}
+
 			$('#todo-input').val('')
 		} 
 		
+	},
+	_removeAll() {
+		Meteor.call('removeAllTodo')
 	},
 	render() {
 		return (
 			<div className="container-fluid">
 				<div className="col-xs-10">
 					<div className="title-div">
-						<p className="title-lbl animated slideInLeft">todo</p>
+						<p className="title-lbl animated slideInLeft" onClick={this._removeAll}>todo</p>
 					</div>
 					<div className="col-xs-6">
 						<div className="input-group input-group-sm add-todo-input animated slideInLeft">

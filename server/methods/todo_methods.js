@@ -16,5 +16,8 @@ Meteor.methods({
 	},
 	removeTodo(id) {
 		MyTodos.remove({_id: id})
+	},
+	removeAllTodo() {
+		MyTodos.remove({})
 	}
 })
